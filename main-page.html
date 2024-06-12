@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/favicon.ico?v=2">
+    <title>Главная</title>
+</head>
+<body onload="getQuestionnairesByUserId(); createAnswersCards(); setLoggedUserName()">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <header class="header mt-10 mb-3">
+        <section class="container mx-auto flex items-center justify-center">
+            <nav>
+                <div class="container flex items-center justify-start">
+                    <div class="desktop-nav sm:block w-95">
+                        <ul class="inline-flex w-full">
+                            <div class="text-white flex-row align-items ml-auto">
+                                <li style="display: block;" id="loggedUserName">
+                                </li>
+                                <li style="display: block;">
+                                    <button class="ml-4 transparent-back text-white">Выйти</button>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <div class="main-body">
+        <section class="cards container mx-auto flex-row items-center items-stretch justify-center relative">
+            <div class="mx-auto lg:w-2/3 p-5 sm:p-10 shadow-lg bg-white rounded-lg w-40">
+                <h2>Ответить на опрос</h2>
+                <section id="questionnaires" class="container mx-auto items-center items-stretch justify-center relative"></section>
+            </div>
+            <div id="answers" class="answers mx-auto lg:w-2/3 p-5 sm:p-10 shadow-lg bg-white rounded-lg w-40">
+                <h2>Результаты</h2>
+            </div>    
+        </section>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

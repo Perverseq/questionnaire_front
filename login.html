@@ -1,0 +1,21 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/favicon.ico?v=2">
+    <title>Вход</title>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="login-page">
+        <div class="form rounded-lg shadow-lg">
+          <form class="login-form" action="/login" method="post">
+            <input name='email' id='email' type="text" placeholder="email" required=""/>
+            <input name="password" id="password" type="password" placeholder="password" required=""/>
+            <label name="restore" class="restore" onclick="restorePassword()">Не помню пароль</label>
+            <button type="submit" name="submit">Войти</button>
+          </form>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
